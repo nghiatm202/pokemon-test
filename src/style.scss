@@ -1,0 +1,38 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 1000
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.nunito {
+    font-family: 'Nunito', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+
+.source-code-pro {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust color and opacity as needed */
+    transform: scale(0);  /* Initially hidden */
+    animation: ripple 0.6s ease-out;
+
+    user-select: none;
+    pointer-events: none;
+}
+
+@keyframes ripple {
+    to {
+        opacity: 0;         /* Fade out */
+        transform: scale(2); /* Expand */
+    }
+}
